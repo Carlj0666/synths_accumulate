@@ -14,3 +14,11 @@ has_many :synths
 has_many :users, through: :synths
 
 # User attribs
+User
+username
+Email
+UID
+provider
+password_digest
+
+rails g resource User username email password_digest uid provider
