@@ -5,6 +5,7 @@ class SynthsController < ApplicationController
   end
 
   def show
+    @synth = Synth.find_by(params[:id] )
   end
 
 end
