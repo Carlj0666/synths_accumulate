@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# User.destroy_all
+# Tech.destroy_all
+# Synth.destroy_all
+
+#works
+u = User.create({ username: 'Carl', email: '', password: '123'})
+t = Tech.create({ name: 'Analog'})
+# Synth.create([{ name: 'Mother', brand: '', hybrid: false, price: 999.99, description: 'An expensive analog synth', user_id: 1, tech_id: 1}])
+
+synthy = u.synths.create(name: "synthy", tech: t)
+
+
