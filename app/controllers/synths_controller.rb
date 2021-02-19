@@ -8,4 +8,9 @@ class SynthsController < ApplicationController
     @synth = Synth.find_by(params[:id] )
   end
 
+  def prodigal
+    @synth = Synth.all.sort_by{|synth| synth.price}.last
+  end
+
+
 end

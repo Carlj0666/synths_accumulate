@@ -1,5 +1,5 @@
 <h1> Synths Index </h1>
 
 <ul><% @synths.each do |synth| %>
-  <li> <%= synth.name_and_tech %> </li>
+  <li> <%= link_to(synth.name_and_tech, synth_path(synth.id))%> </li>
 <% end %></ul>
