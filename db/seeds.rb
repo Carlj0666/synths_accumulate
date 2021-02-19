@@ -14,7 +14,7 @@
 #works
 u = User.create({ username: 'Carl', email: '', password: '123'})
 t = Tech.create({ name: 'Analog'})
-# Synth.create([{ name: 'Mother', brand: '', hybrid: false, price: 999.99, description: 'An expensive analog synth', user_id: 1, tech_id: 1}])
+# Synth.create([{ name: 'Mother', brand: '', hybrid: false, price: 999.99, description: 'An expensive analog synth'}])
 
 synthy = u.synths.create(name: "synthy", tech: t)
 

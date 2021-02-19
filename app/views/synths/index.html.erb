@@ -1,1 +1,6 @@
 <h1> Synths Index </h1>
+
+<ul><% @synths.each do |synth| %>
+  Name: <%= synth.name %><br>
+  Technology: <%= synth.tech.name %>
+<% end %></ul>
