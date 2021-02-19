@@ -7,6 +7,7 @@ class Tech < ApplicationRecord
         synth = self.synths.build(synth_hash)
         synth.user = current_user
         synth.save
-    end 
+    end
+  end
 
 end
