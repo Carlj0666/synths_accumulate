@@ -1,6 +1,13 @@
 # Test Notes Revised
 
-# Associations
+# Learn plan
+1) Rails new
+2) Setup Tables/associations
+3) Follow week 6 videos to setup User Model
+4) Go back to 2nd video of week 1 and follow sequentially from there
+
+
+# Associations Map
 # User
 has_many :synths
 has_many :tech, through: :synths
@@ -13,21 +20,5 @@ belongs_to :tech
 has_many :synths
 has_many :users, through: :synths
 
-# User attribs
-User
-username
-Email
-UID
-provider
-password_digest
-
-rails g resource User username email password_digest uid provider
 
 
-shoe = Shoe.new(color: "black")
-shoe.save
-# if the save was unsuccessful, look at the errors:
-shoe.errors.full_messages
-# if I got the error "Brand must exist", then I need to associate the shoe to a brand before saving:
-nike = Brand.create(name: "Nike")
-shoe = nike.shoes.create(color: "black")
