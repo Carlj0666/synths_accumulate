@@ -4,7 +4,7 @@ class SynthsController < ApplicationController
     @synth = Synth.new
   end
 
-  def create
+  def create 
 
     @synth = Synth.new(synth_params)
     if @synth.save

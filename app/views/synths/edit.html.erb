@@ -1,6 +1,6 @@
 <h1> Edit Synth </h1>
 
-<%= form_with(model:@synth) do |f| %>
+<%= form_for(@synth) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br>
   <%= f.label :brand %>

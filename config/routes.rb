@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # get '/synths', to: 'synths#index', as: 'synths'
   # get '/synths/:id', to: 'synths#show', as: 'synth'
   resources :synths
+  resources :teches, only: [:new, :create, :show, :index ]
 
   get '/auth/:provider/callback', to: 'sessions#omniauth'
 
