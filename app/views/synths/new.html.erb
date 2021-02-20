@@ -1,5 +1,17 @@
 <h1> New Synth </h1> 
 
+<% if @synth.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@synth.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+    <ul>
+      <% @synth.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_for(@synth) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name, required: true %><br>

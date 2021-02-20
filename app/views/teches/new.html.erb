@@ -1,2 +1,7 @@
-<h1>Teches#new</h1>
-<p>Find me in app/views/teches/new.html.erb</p>
+<h1>New Teches</h1>
+
+<%= form_for(@tech) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
