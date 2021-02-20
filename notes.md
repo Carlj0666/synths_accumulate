@@ -22,5 +22,7 @@ belongs_to :tech
 has_many :synths
 has_many :users, through: :synths
 
+# DB PURGE
+rake db:drop db:create db:migrate
 
 
