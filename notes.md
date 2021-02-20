@@ -36,17 +36,20 @@ Use the Ruby on Rails framework.
 
 Your models must:
 
-[] Include at least one has_many, at least one belongs_to, and at least two has_many :through relationships
+[X] Include at least one has_many, at least one belongs_to, and at least two has_many :through relationships
 
 [] Include a many-to-many relationship implemented with has_many :through associations. The join table must include a user-submittable attribute — that is to say, some attribute other than its foreign keys that can be submitted by the app's user
+* PROBABLY the TECH NAME HERE as the USER submittable attrib on the join table
 
 [] Your models must include reasonable validations for the simple attributes. You don't need to add every possible validation or duplicates, such as presence and a minimum length, but the models should defend against invalid data.
 
-[] You must include at least one class level ActiveRecord scope method. a. Your scope method must be chainable, meaning that you must use ActiveRecord Query methods within it (such as .where and .order) rather than native ruby methods (such as #find_all or #sort).
+[X] You must include at least one class level ActiveRecord scope method. a. Your scope method must be chainable, meaning that you must use ActiveRecord Query methods within it (such as .where and .order) rather than native ruby methods (such as #find_all or #sort).
+* UNDER synth model - self.order_by_price method contains .order
 
 [] Your application must provide standard user authentication, including signup, login, logout, and passwords.
 
-[] Your authentication system must also allow login from some other service. Facebook, Twitter, Foursquare, Github, etc...
+[X] Your authentication system must also allow login from some other service. Facebook, Twitter, Foursquare, Github, etc...
+* Google oauth
 
 [] You must include and make use of a nested resource with the appropriate RESTful URLs.
 
@@ -68,4 +71,4 @@ Your models must:
 
 [] Follow patterns in the Rails Style Guide and the Ruby Style Guide.
 
-[] Do not use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding.
+[X] Do not use scaffolding to build your project. Your goal here is to learn. Scaffold is a way to get up and running quickly, but learning a lot is not one of the benefits of scaffolding.

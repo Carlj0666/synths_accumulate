@@ -16,7 +16,6 @@ class Synth < ApplicationRecord
 
   def self.order_by_price
     self.order(price: :desc)
-    #self.all.sort_by{|synth| synth.price}.last
   end
 
 
