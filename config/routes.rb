@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #remember that the order of routes matter here, put custom routes at the top
   # get '/synths', to: 'synths#index', as: 'synths'
   # get '/synths/:id', to: 'synths#show', as: 'synth'
-  resources :synths#, only: [:index, :show, :new, :create]
+  resources :synths
 
   get '/auth/:provider/callback', to: 'sessions#omniauth'
 
