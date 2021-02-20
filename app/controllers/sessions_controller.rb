@@ -1,12 +1,10 @@
 class SessionsController < ApplicationController
 
   def omniauth
-    user = User.find_or_create_by(uid: auth['uid'], provider: auth['provider']) do |u|
-      u.username = auth['info']['name']
-      u.email = auth['info']['email']
-      u.password = SecureRandom.hex(24)
-    end
+    user = User. create_from_omniauth(auth)
+
     if user.valid?
+      session[:user_id] = user_id
       redirect_to new_synth_path
     else
       flash[:message] = user.errors.full_messages.join("")

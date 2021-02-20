@@ -10,6 +10,8 @@
 
 # Current
 Need to sort out show page, shows same thing
+Need to validate for email uniqueness, look into this. Video here includes discussion:
+https://www.youtube.com/watch?v=AoIqSQsijN0&feature=youtu.be
 
 
 # Associations Map
