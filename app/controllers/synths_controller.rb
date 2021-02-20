@@ -7,32 +7,34 @@ class SynthsController < ApplicationController
   def create
     @synth = Synth.new(synth_params)
     if @synth.save
-      redirect_to synth_path(synth)
+      redirect_to synth_path(@synth)
     else
       render :new
     end
   end
 
   def index
-    @synths = Synth.all.order_by_price
+    @synths = Synth.all
   end
 
   def show
-    @synth = Synth.find_by(params[:id])
+    @synth = Synth.find(params[:id])
   end
 
   def edit
-    @synth = Synth.find_by(params[:id])
+    @synth = Synth.find(params[:id])
   end
 
   def update
-    synth = Synth.find_by(params[:id])
+    synth = Synth.find(params[:id])
     synth.update(synth_params)
     redirect_to synth_path(synth)
   end
 
-  def delete
-    
+  def destroy
+    synth = Synth.find(params[:id])
+    synth.destroy
+    redirect_to synths_path
   end
 
   def prodigal
