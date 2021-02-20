@@ -1,5 +1,7 @@
 <h1> Synths Index </h1>
 
+<%= flash[:message] %>
+
 <ul><% @synths.each do |synth| %>
   <li> <%= link_to(synth.name_and_tech, synth_path(synth.id))%> </li>
 <% end %></ul>

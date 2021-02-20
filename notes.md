@@ -8,6 +8,9 @@
 5) Finish oauth setup here: https://www.youtube.com/watch?v=AoIqSQsijN0&feature=youtu.be from: 26:43
 6) Follow sequentially from there
 
+# Current
+Need to sort out show page, shows same thing
+
 
 # Associations Map
 # User
