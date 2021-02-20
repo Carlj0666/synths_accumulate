@@ -5,6 +5,7 @@ class SynthsController < ApplicationController
   end
 
   def create
+
     @synth = Synth.new(synth_params)
     if @synth.save
       redirect_to synth_path(@synth)

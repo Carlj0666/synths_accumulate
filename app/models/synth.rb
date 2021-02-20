@@ -1,6 +1,8 @@
 class Synth < ApplicationRecord
   belongs_to :tech
   belongs_to :user
+  validates :brand, :price, presence: true
+  validates :name, presence: true, uniqueness: true
 
   def name_and_tech
     "Name: #{self.name} - Technology: #{self.tech.name}"

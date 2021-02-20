@@ -1,10 +1,10 @@
-<h1> New Synth </h1>
+<h1> New Synth </h1> 
 
 <%= form_with(model:@synth, class: 'new_synth') do |f| %>
   <%= f.label :name %>
-  <%= f.text_field :name %><br>
+  <%= f.text_field :name, required: true %><br>
   <%= f.label :brand %>
-  <%= f.text_field :brand %><br>
+  <%= f.text_field :brand, required: true %><br>
   <%= f.label :hybrid %>
   <%= f.check_box :hybrid %><br>
   <%= f.label :price %>
