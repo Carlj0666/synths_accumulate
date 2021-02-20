@@ -2,7 +2,7 @@
 
 <% if @synth.errors.any? %>
   <div id="error_explanation">
-    <h2><%= pluralize(@synth.errors.count, "error") %> prohibited this article from being saved:</h2>
+    <h2><%= pluralize(@synth.errors.count, "error") %> prohibited this Synth from being saved:</h2>
 
     <ul>
       <% @synth.errors.full_messages.each do |error| %>

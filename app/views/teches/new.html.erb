@@ -1,5 +1,17 @@
 <h1>New Teches</h1>
 
+<% if @tech.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@tech.errors.count, "error") %> prohibited this Tech from being saved:</h2>
+
+    <ul>
+      <% @tech.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
 <%= form_for(@tech) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
