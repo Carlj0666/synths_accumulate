@@ -2,8 +2,8 @@ class TechesController < ApplicationController
 
   def new
     @tech = Tech.new
-    #can do 3.times (@tech.synths.build) to make multiple entries possible
-    @tech.synths.build 
+    #can do 3.times {@tech.synths.build} to make multiple entries possible
+    3.times{@tech.synths.build}
   end
 
   def create
@@ -26,6 +26,7 @@ class TechesController < ApplicationController
   private
 
   def tech_params
-    params.require(:tech).permit(:name)
+    params.require(:tech).permit(:name, synths_attributes: [:brand, :hybrid, :price, :description])
+    #synths_attributes comes from the accepts_nested_attributes_for :synths method
   end
 end

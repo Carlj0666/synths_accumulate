@@ -1,1 +1,8 @@
-<h1><%= @tech.name %></h1>
+<h1>Synths with this Tech: <%= @tech.name %></h1>
+
+<ul>
+<% @tech.synths.each do |synth| %>
+  <li><%= link_to(synth.name, synth_path(synth.id)) %><br>
+  Hybrid? <%= synth.hybrid %></li>
+<% end %>
+</ul>
