@@ -2,6 +2,7 @@ class SynthsController < ApplicationController
 
   def new
     @synth = Synth.new
+    @synth.build_tech 
   end
 
   def create 
@@ -46,7 +47,7 @@ class SynthsController < ApplicationController
   private
 
   def synth_params
-    params.require(:synth).permit(:name, :brand, :hybrid, :price, :description)
+    params.require(:synth).permit(:name, :brand, :hybrid, :price, :description, tech_attributes: [:tech])
   end
 
 end

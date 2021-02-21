@@ -9,8 +9,10 @@
 6) Follow sequentially from there
 
 # Current
-Need to sort out show page, shows same thing no matter which show page is selected
-Create not working, no no synths saved
+
+CHECK - Create not working, no no synths saved? 
+CHECK = synths_attributes=(attributes) model for above
+NESTED ATTRIBES COULD FIX THIS
 Need to validate for email uniqueness, look into this. Video here includes discussion:
 https://www.youtube.com/watch?v=AoIqSQsijN0&feature=youtu.be
 

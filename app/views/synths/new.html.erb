@@ -15,8 +15,14 @@
 <%= form_for(@synth) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br>
+  <%= f.label :tech %>
+  <%= f.fields_for :tech do |t| %>
+    <%= t.label :name %>
+    <%= t.text_field :name %><br>
+  <% end %>
+  <br>
   <%= f.label :brand %>
-  <%= f.text_field :brand %><br>
+  <%= f.text_field :brand %><br> 
   <%= f.label :hybrid %>
   <%= f.check_box :hybrid %><br>
   <%= f.label :price %>
