@@ -16,10 +16,12 @@
   <%= f.label :name %>
   <%= f.text_field :name %><br>
   <%= f.label :tech %>
-  <%= f.fields_for :tech do |t| %>
+  <%= f.collection_select :tech_id, Tech.all, :id, :name, prompt: true %>
+  New<%= f.fields_for :tech do |t| %>
     <%= t.label :name %>
     <%= t.text_field :name %><br>
   <% end %>
+
   <br>
   <%= f.label :brand %>
   <%= f.text_field :brand %><br> 
@@ -31,3 +33,5 @@
   <%= f.text_field :description %><br>
   <%= f.submit %>
 <% end %>
+
+
