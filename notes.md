@@ -1,5 +1,8 @@
 # Test Notes Revised
 
+# At 37:04 in https://www.youtube.com/watch?v=8jsA7fa8J2M&feature=youtu.be
+Continue nested forms
+
 # Learn plan
 1) Rails new
 2) Setup Tables/associations
