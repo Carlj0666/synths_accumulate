@@ -13,7 +13,7 @@ class Synth < ApplicationRecord
   end
 
   def name_and_tech
-    "Name: #{self.name} - Technology: #{self.tech.name}"
+    "Name: #{self.name} - Technology: #{self.tech.try(:name)}"
   end
 
   def display_hybrid
