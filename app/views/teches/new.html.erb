@@ -15,5 +15,15 @@
 <%= form_for(@tech) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
+  <%= f.fields_for :synths do |s| %>
+    <%= s.text_field :brand %><br> 
+    <%= s.label :hybrid %>
+    <%= s.check_box :hybrid %><br>
+    <%= s.label :price %>
+    <%= s.number_field :price %><br>
+    <%= s.label :description %>
+    <%= s.text_field :description %><br>
+    <%= s.label :brand %>
+  <% end %>
   <%= f.submit %>
 <% end %>

@@ -9,7 +9,6 @@ class Synth < ApplicationRecord
 
   def tech_attributes=(attributes)
     self.tech = Tech.find_or_create_by(name: attributes[:name])
-    end
   end
 
 #   def tech_attributes=(attributes)
