@@ -1,4 +1,7 @@
 <h1> Synth Show </h1>
+
+Name: <%= @synth.name %><br>
+Tech: <%= @synth.tech.name %><br>
 Hybrid Tech? <%= @synth.display_hybrid %>
 <br>
 Price: <%= number_to_currency(@synth.price) %>

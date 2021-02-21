@@ -8,11 +8,7 @@ class Synth < ApplicationRecord
   #allows several same brand but not with name as well
 
   def tech_attributes=(attributes)
-
-    attributes.each do |number, synth_hash| 
-        synth = self.synths.build(synth_hash)
-        synth.user = current_user
-        synth.save
+    self.tech = Tech.find_or_create_by(name: attributes[:name])
     end
   end
 
