@@ -1,7 +1,7 @@
 # Test Notes Revised
-left off at 35:28 in https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
+left off at 35:30 in https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
 working on user login/logout and views setups.
-Also work on welcome page for root, links to login or signup
+
 
 # Learn plan
 1) Rails new
