@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to user_path(@user)
     else
-    ender :new
+    render :new
     end
   end
 
@@ -18,5 +18,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  private
+  def user_params
+    params.require(:user).permit(:email, :uid, :provider, :password)
+  end
   
 end
+
