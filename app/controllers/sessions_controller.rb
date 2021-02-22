@@ -4,15 +4,17 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_mail(params[:email])
-    if user && user.authenticate(params[:password])
-      session[:user_id] = user.id
+    user = User.find_by_mail(params[:email]) #find by email given
+    if user && user.authenticate(params[:password]) #if user is found and authed(authenicate comes form has_secure_password)
+      session[:user_id] = user.id #actual login, the session user id is the same as the user id
       redirect_to user_path(user)
     else
       flash[:message] = "Please Try Again"
       redirect_to '/login'
     end
   end
+
+  def
 
   def omniauth
     user = User. create_from_omniauth(auth)
