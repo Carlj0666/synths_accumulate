@@ -14,8 +14,6 @@ class SessionsController < ApplicationController
     end
   end
 
-  def
-
   def omniauth
     user = User. create_from_omniauth(auth)
 
@@ -27,6 +25,7 @@ class SessionsController < ApplicationController
       redirect_to synths_path
     end
   end
+
 
   private
 
