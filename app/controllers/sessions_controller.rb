@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_mail(params[:email]) #find by email given
+    user = User.find_by_email(params[:email]) #find by email given
     if user && user.authenticate(params[:password]) #if user is found and authed(authenicate comes form has_secure_password)
       session[:user_id] = user.id #actual login, the session user id is the same as the user id
       redirect_to user_path(user)
@@ -14,6 +14,11 @@ class SessionsController < ApplicationController
     end
   end
 
+  def destroy
+    session.delete(:user_id)
+    redirect_to '/login'
+  end
+ 
   def omniauth
     user = User. create_from_omniauth(auth)
 
