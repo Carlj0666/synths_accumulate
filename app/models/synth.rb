@@ -8,7 +8,7 @@ class Synth < ApplicationRecord
   #allows several same brand but not with name as well
 
   def tech_attributes=(attributes)
-    if !attributes[:name].blank?
+    # if !attributes[:name].blank?
     self.tech = Tech.find_or_create_by(name: attributes[:name])
   end
 
