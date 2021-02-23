@@ -1,4 +1,6 @@
 class SynthsController < ApplicationController
+  #before_action :require_login
+  #skip_before_action :require_login, only: [:edit, :destroy, :new]
 
   def new
     @synth = Synth.new

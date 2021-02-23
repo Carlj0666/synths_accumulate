@@ -1,5 +1,8 @@
 class TechesController < ApplicationController
 
+  #before_action :require_login
+  #skip_before_action :require_login, only: [:new]
+
   def new
     @tech = Tech.new
     #can do 3.times{@tech.synths.build} to make multiple entries possible
