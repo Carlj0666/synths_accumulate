@@ -1,6 +1,6 @@
 # Test Notes Revised
-left off at 0:00 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
-
+left off at (refactoring) 36:06 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
+Left off at (Proj prep, user setup) 47:06 https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
 * create logout links to show in layout
 
 * Logged in as message in layout?
