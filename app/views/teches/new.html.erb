@@ -13,7 +13,7 @@
 <% end %>
 
 <%= form_for(@tech) do |f| %>
-  <%= f.label "Tech" %>
+  <%= f.label :tech %>
   <%= f.text_field :name %>
   <%= f.fields_for :synths do |s| %><br>
     <%= s.label :name %>

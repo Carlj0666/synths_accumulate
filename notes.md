@@ -6,6 +6,7 @@ working on user login/logout and views setups.
 * Logged in as message in layout?
 * Delete Synth doesn't work
 *Must be logged in to create a tech
+* Mst be logged in to create synth
 
 # DONE
 Login

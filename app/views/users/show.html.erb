@@ -1,1 +1,7 @@
 <h1>Welcome <%= @user.username %></h1>
+
+<%= link_to('New Tech', new_tech_path) %><br>
+<%= link_to('New Synth', new_synth_path) %><br>
+<% byebug %>
+<%= link_to("Edit Synth", edit_synth_path(@synth.id)) %><br>
+<%= link_to("Delete Synth", synth_path(@synth.id), method: 'delete')%><br>

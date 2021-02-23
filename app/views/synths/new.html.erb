@@ -18,7 +18,7 @@
   <%= f.label :tech %>
   <%= f.collection_select :tech_id, Tech.all, :id, :name, prompt: true %>
   New<%= f.fields_for :tech do |t| %>
-    <%= t.label :name %>
+    <%= t.label :tech %>
     <%= t.text_field :name %><br>
   <% end %>
 
