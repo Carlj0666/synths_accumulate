@@ -2,8 +2,8 @@ class TechesController < ApplicationController
 
   def new
     @tech = Tech.new
-    #can do 3.times {@tech.synths.build} to make multiple entries possible
-    3.times{@tech.synths.build}
+    #can do 3.times{@tech.synths.build} to make multiple entries possible
+    @tech.synths.build
   end
 
   def create

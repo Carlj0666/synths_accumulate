@@ -13,9 +13,11 @@
 <% end %>
 
 <%= form_for(@tech) do |f| %>
-  <%= f.label :name %>
+  <%= f.label "Tech" %>
   <%= f.text_field :name %>
   <%= f.fields_for :synths do |s| %><br>
+    <%= s.label :name %>
+    <%= s.text_field :name %><br>
     <%= s.label :brand %>
     <%= s.text_field :brand %><br> 
     <%= s.label :hybrid %>

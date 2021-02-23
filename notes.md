@@ -1,12 +1,18 @@
 # Test Notes Revised
 left off at 35:30 in https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
 working on user login/logout and views setups.
-*Not showing errors in user login
-*Not showin errors in signup
+* create logout links to show in layout
+* figure out how to make synths created by users only editable by them
+* Logged in as message in layout?
+* Delete Synth doesn't work
+*Must be logged in to create a tech
 
-validate username and password in user model, check for uniquness and presence
-*Should I have username shown to confirm who the user is?
-*what is the best route to make sure en email is used once, or that the combo of username/email/password is correct? Check for or deny duplicates
+# DONE
+Login
+Create new User
+Create Synth
+Edit Synth
+
 
 # Learn plan
 1) Rails new
