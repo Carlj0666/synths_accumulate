@@ -11,13 +11,15 @@
   </head>
 
   <body>
-  <%= link_to("Synths", synths_path) %>
-  <%= link_to("Prodigal Synths", prodigal_synth_path) %>
   <%= button_to("Login with Google", '/auth/google_oauth2') %>
   <hr>
   <% if flash[:message] %>
     <div class="field_with_errors"> <%=flash[:message]%></div>
   <% end %>
     <%= yield %>
+    <hr>
+    <%= link_to("All Synths", synths_path) %>
+    <%= link_to("Add Synths", new_synth_path) %>
+    <%= link_to("Prodigal Synths", prodigal_synth_path) %>
   </body>
 </html>

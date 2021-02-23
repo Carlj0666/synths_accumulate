@@ -1,11 +1,11 @@
 # Test Notes Revised
-left off at 35:30 in https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
-working on user login/logout and views setups.
+left off at 0:00 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
+
 * create logout links to show in layout
 * figure out how to make synths created by users only editable by them
 * Logged in as message in layout?
 * Delete Synth doesn't work
-*Must be logged in to create a tech
+* Must be logged in to create a tech
 * Mst be logged in to create synth
 
 # DONE
