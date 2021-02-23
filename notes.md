@@ -5,7 +5,7 @@ Left off at (Proj prep, user setup) 47:06 https://www.youtube.com/watch?v=7Il479
 
 * Logged in as message in layout?
 
-BELOW DONE WITH HELPERS VIA VIEW HELPERS: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
+BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 36:00
 * Must be logged in to create a tech
 * Mst be logged in to create synth
