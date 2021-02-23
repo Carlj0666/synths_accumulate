@@ -2,11 +2,18 @@
 left off at 0:00 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 
 * create logout links to show in layout
-* figure out how to make synths created by users only editable by them
+
 * Logged in as message in layout?
-* Delete Synth doesn't work
+
+BELOW DONE WITH HELPERS VIA VIEW HELPERS: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
+36:00
 * Must be logged in to create a tech
 * Mst be logged in to create synth
+* Delete Synth doesn't work
+* figure out how to make synths created by users only editable by them (Or let anyone logged in edit)
+
+# Scope methods: https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
+20:00
 
 # DONE
 Login
