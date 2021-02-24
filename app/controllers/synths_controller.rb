@@ -1,5 +1,7 @@
 class SynthsController < ApplicationController
-  #before_action :require_login, only: [:edit, :destroy, :new]
+  
+  before_action :set_synth, :redirect_non_owners, only: [:show, :edit, :update, :destroy]
+  before_action :logged_in?, only: [:new]
 
   def new
     @synth = Synth.new
@@ -7,10 +9,12 @@ class SynthsController < ApplicationController
   end
 
   def create 
-    @synth = .build(synth_params)
+    #@synth = Synth.new(synth_params)
+    @synth = current_user.synths.build(synth_params)
     if @synth.save
       redirect_to synth_path(@synth)
     else
+      # @teches = Tech.find_by_id(params[:tech_id]) if params[:tech_id]
       render :new
     end
   end
@@ -20,22 +24,22 @@ class SynthsController < ApplicationController
   end
 
   def show
-    @synth = Synth.find(params[:id])
+    #before action set synth under private handles this now
   end
 
   def edit
-    @synth = Synth.find(params[:id])
+      #before action set synth under private handles this now
   end
 
   def update
-    synth = Synth.find(params[:id])
-    synth.update(synth_params)
-    redirect_to synth_path(synth)
+      #before action set synth under private handles this now
+    @synth.update(synth_params)
+    redirect_to synth_path(@synth)
   end
 
   def destroy
-    synth = Synth.find(params[:id])
-    synth.destroy
+      #before action set synth under private handles this now
+    @synth.destroy
     redirect_to synths_path
   end
 
@@ -48,4 +52,15 @@ class SynthsController < ApplicationController
   def synth_params
     params.require(:synth).permit(:name, :brand, :hybrid, :price, :description, :tech_id, :user_id, tech_attributes: [:name])
   end
+
+  def redirect_non_owners
+    if current_user != @synth.user
+      redirect_to user_path(current_user), alert: "Not editable by this user"
+    end
+  end
+
+  def set_synth
+    @synth = Synth.find(params[:id])
+  end
+
 end

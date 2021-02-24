@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
 
-  #before_action :require_login, only: [:show]
-
   def new
     @user = User.new
   end
@@ -18,13 +16,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-
-    #extract to model as user_logged_in?
-    # if @user.id == session.id
-    #   redirect_to '/users/:id'
-    # else
-    #   redirect_to :login
-    # end
   end
 
   private

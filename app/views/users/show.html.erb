@@ -3,9 +3,9 @@
 
 <h3> Your Synths: <h3/>
 <% @user.synths.each do |synth| %>
-  <%= link_to(synth.name, synth_path(synth.id)) %>
+  <%= link_to(synth.name, synth_path(synth.id)) %><br>
 <% end %>
-<br>
 
+<hr>
 <%= link_to('New Tech', new_tech_path) %><br>
 <%= link_to('New Synth', new_synth_path) %><br>

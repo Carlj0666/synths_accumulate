@@ -1,16 +1,15 @@
 class TechesController < ApplicationController
 
-  #before_action :require_login
-  #skip_before_action :require_login, only: [:new]
+  before_action :logged_in?, only: [:new]
 
   def new
     @tech = Tech.new
-    #can do 3.times{@tech.synths.build} to make multiple entries possible
     @tech.synths.build
   end
 
-  def create
+  def create     
     @tech = Tech.new(tech_params)
+    @tech = current_user.teches.build(tech_params)
     if @tech.save
       redirect_to tech_path(@tech)
     else
@@ -32,4 +31,5 @@ class TechesController < ApplicationController
     params.require(:tech).permit(:name, synths_attributes: [:brand, :hybrid, :price, :description])
     #synths_attributes comes from the accepts_nested_attributes_for :synths method
   end
+
 end
