@@ -28,5 +28,9 @@
       <input type="Submit" value="Logout">
     </form>
 
+    <%= form_tag logout_path(session.id), method: "delete" do %>
+      <%= submit_tag "Delete current User?"%>
+    <% end %>
+
   </body>
 </html>
