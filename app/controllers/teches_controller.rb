@@ -1,7 +1,5 @@
 class TechesController < ApplicationController
 
-  before_action :logged_in?, only: [:new]
-
   def new
     @tech = Tech.new
     @tech.synths.build
@@ -13,6 +11,7 @@ class TechesController < ApplicationController
     if @tech.save
       redirect_to tech_path(@tech)
     else
+      @teches = Tech.find_by_id(params[:tech_id]) if params[:tech_id]
       render :new
     end
   end
@@ -28,7 +27,7 @@ class TechesController < ApplicationController
   private
 
   def tech_params
-    params.require(:tech).permit(:name, synths_attributes: [:brand, :hybrid, :price, :description])
+    params.require(:tech).permit(:name, synths_attributes: [:name, :brand, :hybrid, :price, :description])
     #synths_attributes comes from the accepts_nested_attributes_for :synths method
   end
 
