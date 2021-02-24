@@ -4,19 +4,20 @@ left off at (refactoring) 36:06 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feat
 BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 36:00
 
-* Log out doesn't work
-* Delete Synth doesn't work
-*brand and price under new tech should be optional to add - Debating if tech should only be added with new synths?
+* Log out doesn't work - application controller
+build form tag to send delete request
 
+* Delete Synth doesn't work - 
+build form tag to send delete request
+
+
+*brand and price under new tech should be optional to add - Debating if tech should only be added with new synths?
 
 
 # Scope methods: https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
 20:00
 
 # DONE
-Create new User
-Create Synth
-Edit Synth
 
 
 # Learn plan

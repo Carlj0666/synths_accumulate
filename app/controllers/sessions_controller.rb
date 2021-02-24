@@ -15,8 +15,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    user = Synth.find(params[:id])
-    user. session.delete(:user_id)
+    # user = Synth.find(params[:id])
+    session.delete(:user_id)
     redirect_to '/login'
   end
  
