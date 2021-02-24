@@ -3,6 +3,12 @@
 <%= form_for(@synth) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br>
+  <%= f.label :tech %>
+  <%= f.collection_select :tech_id, Tech.all, :id, :name, prompt: true %>
+    New<%= f.fields_for :tech do |t| %>
+    <%= t.label :tech %>
+    <%= t.text_field :name %><br>
+  <% end %>
   <%= f.label :brand %>
   <%= f.text_field :brand %><br>
   <%= f.label :hybrid %>
@@ -13,3 +19,4 @@
   <%= f.text_field :description %><br>
   <%= f.submit %>
 <% end %>
+

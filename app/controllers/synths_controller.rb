@@ -1,6 +1,6 @@
 class SynthsController < ApplicationController
   
-  before_action :set_synth, :redirect_non_owners, only: [:show, :edit, :update, :destroy]
+  before_action :set_synth, :redirect_non_owners, only: [:show, :edit, :update]
   before_action :logged_in?, only: [:new]
 
   def new
@@ -14,7 +14,7 @@ class SynthsController < ApplicationController
     if @synth.save
       redirect_to synth_path(@synth)
     else
-      # @teches = Tech.find_by_id(params[:tech_id]) if params[:tech_id]
+      @teches = Tech.find_by_id(params[:tech_id]) if params[:tech_id]
       render :new
     end
   end
@@ -39,6 +39,8 @@ class SynthsController < ApplicationController
 
   def destroy
       #before action set synth under private handles this now
+      @synth = Synth.find(params[:id])
+      binding.pry
     @synth.destroy
     redirect_to synths_path
   end

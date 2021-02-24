@@ -13,7 +13,7 @@ module ApplicationHelper
   end
 
   def logged_and_current
-    if current_user && logged_in?
+    if logged_in?
       "Logged in as: " + @current_user.username
     end
   end
