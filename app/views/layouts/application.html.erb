@@ -12,6 +12,7 @@
 
   <body>
   <%= button_to("Login with Google", '/auth/google_oauth2') %>
+  <%= logged_and_current %>
   <hr>
   <% if flash[:message] %>
     <div class="field_with_errors"> <%=flash[:message]%></div>

@@ -12,6 +12,10 @@ module ApplicationHelper
     !!current_user #could use session[:user_id] method from above here too
   end
 
-
+  def logged_and_current
+    if current_user && logged_in?
+      "Logged in as: " + @current_user.username
+    end
+  end
 
 end
