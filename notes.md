@@ -5,13 +5,15 @@ Left off at (Proj prep, user setup) 47:06 https://www.youtube.com/watch?v=7Il479
 
 * Logged in as message in layout?
 
-* ADDED SKIP_BEFORE_ACTION notes to users, teches, and synths controllers to require login. Research
+* ADDED SKIP_BEFORE_ACTION notes to users, teches, and synths controllers to require login. Research,
+commented out..
 
 BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 36:00
 * User session not persisting
 * Must be logged in to create a tech
 * Must be logged in to create synth
+* Log out doesn't work
 * Delete Synth doesn't work
 * figure out how to make synths created by users only editable by them (Or let anyone logged in edit)
 *brand and price under new tech should be optional to add
@@ -19,7 +21,6 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 20:00
 
 # DONE
-Login
 Create new User
 Create Synth
 Edit Synth

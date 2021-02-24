@@ -1,6 +1,5 @@
 class SynthsController < ApplicationController
-  #before_action :require_login
-  #skip_before_action :require_login, only: [:edit, :destroy, :new]
+  #before_action :require_login, only: [:edit, :destroy, :new]
 
   def new
     @synth = Synth.new
@@ -8,7 +7,7 @@ class SynthsController < ApplicationController
   end
 
   def create 
-    @synth = Synth.new(synth_params)
+    @synth = .build(synth_params)
     if @synth.save
       redirect_to synth_path(@synth)
     else
@@ -47,6 +46,6 @@ class SynthsController < ApplicationController
   private
 
   def synth_params
-    params.require(:synth).permit(:name, :brand, :hybrid, :price, :description, :tech_id, tech_attributes: [:name])
+    params.require(:synth).permit(:name, :brand, :hybrid, :price, :description, :tech_id, :user_id, tech_attributes: [:name])
   end
 end
