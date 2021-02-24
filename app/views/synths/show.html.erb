@@ -7,4 +7,7 @@ Hybrid Tech? <%= @synth.display_hybrid %>
 Price: <%= number_to_currency(@synth.price) %>
 <br>
 <%= link_to("Edit Synth", edit_synth_path(@synth.id)) %>
-<%= link_to("Delete Synth", synth_path(@synth.id), method: 'delete')%>
+
+<%= form_tag synth_path(@synth.id), method: "delete" do %>
+  <%= submit_tag "Delete #{@synth.name}" %>
+<% end %>

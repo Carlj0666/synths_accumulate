@@ -22,6 +22,11 @@
     <%= link_to("All Synths", synths_path) %>
     <%= link_to("Add Synths", new_synth_path) %>
     <%= link_to("Prodigal Synths", prodigal_synth_path) %>
-    <%= link_to("Logout", '/logout', method: 'delete') %>
+   
+    <form method="DESTROY" action="/logout">
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+      <input type="Submit" value="Logout">
+    </form>
+
   </body>
 </html>
