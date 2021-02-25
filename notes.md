@@ -4,14 +4,18 @@ left off at (refactoring) 36:06 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feat
 BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 36:00
 
+# Bugs
+* Not all errors displaying properly when trying to create synth with no input data
 * Need to remove price requirement from new tech
-* link to create new user on index page
+
+* link to home on index page
 * logout button only appears when logged in
 
+
 # Done
-* create, delete, update only as logged in user/logged in oauth
+* create, delete only as logged in user/logged in oauth
 * log in/out as user
-* Not all errors displaying properly when trying to create synth with no input data
+
 
 *brand and price under new tech should be optional to add - Debating if tech should only be added with new synths?
 

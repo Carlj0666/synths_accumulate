@@ -51,7 +51,7 @@ class SynthsController < ApplicationController
   private
 
   def synth_params
-    params.require(:synth).permit(:name, :brand, :hybrid, :price, :description, :tech_id, :user_id, tech_attributes: [:name])
+    params.require(:synth).permit(:name, :brand, :hybrid, :price, :description, :tech_id, tech_attributes: [:name])
   end
 
   def redirect_non_owners

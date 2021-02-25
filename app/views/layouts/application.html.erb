@@ -11,7 +11,6 @@
   </head>
 
   <body>
-  <%= button_to("Login with Google", '/auth/google_oauth2') %>
   <%= logged_and_current %>
   <hr>
   <% if flash[:message] %>
@@ -22,6 +21,7 @@
     <%= link_to("All Synths", synths_path) %>
     <%= link_to("Add Synths", new_synth_path) %>
     <%= link_to("Prodigal Synths", prodigal_synth_path) %>
+    <%= link_to("Home", root_path) %>
    
     <%= form_tag logout_path(session.id), method: "delete" do %>
       <%= submit_tag "Logout"%>

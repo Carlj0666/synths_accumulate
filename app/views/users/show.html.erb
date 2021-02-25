@@ -1,11 +1,12 @@
 <h1>Welcome <%= @user.username %></h1>
 
 
-<h3> Your Synths: <h3/>
+Your Synths:
+<br>
 <% @user.synths.each do |synth| %>
   <%= link_to(synth.name, synth_path(synth.id)) %><br>
 <% end %>
 
 <hr>
-<%= link_to('New Tech', new_tech_path) %><br>
 <%= link_to('New Synth', new_synth_path) %><br>
+<%= link_to('New Tech', new_tech_path) %><br>
