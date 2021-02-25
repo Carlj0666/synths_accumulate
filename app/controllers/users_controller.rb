@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
 
-  before_action :show, :redirect_non_users
-
   def new
     @user = User.new
   end
@@ -23,14 +21,6 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:username, :email, :uid, :provider, :password)
-  end
-
-  # may not be secure
-  def redirect_non_users
-    binding.pry
-    if !logged_in? && current_user.id != params["id"]
-      render :login
-    end
   end
   
 end

@@ -8,8 +8,10 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 * Not all errors displaying properly when trying to create synth with no input data
 * Need to remove price requirement from new tech
 
-* link to home on index page
 * logout button only appears when logged in
+
+
+***NESTED ROUTES!!
 
 * synths controller, create action, if not logged in, but try to create, error loads
 NoMethodError in SynthsController#create
