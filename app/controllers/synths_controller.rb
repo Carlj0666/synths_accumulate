@@ -10,6 +10,7 @@ class SynthsController < ApplicationController
 
   def create 
     #@synth = Synth.new(synth_params)
+
     @synth = current_user.synths.build(synth_params)
     if @synth.save
       redirect_to synth_path(@synth)

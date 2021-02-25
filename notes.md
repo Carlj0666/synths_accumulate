@@ -11,6 +11,17 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 * link to home on index page
 * logout button only appears when logged in
 
+* synths controller, create action, if not logged in, but try to create, error loads
+NoMethodError in SynthsController#create
+undefined method `synths' for nil:NilClass
+Extracted source (around line #17):          
+    #   render :new
+    # end
+    @synth = current_user.synths.build(synth_params)
+    if @synth.save
+      redirect_to synth_path(@synth)
+    else
+
 
 # Done
 * create, delete only as logged in user/logged in oauth
