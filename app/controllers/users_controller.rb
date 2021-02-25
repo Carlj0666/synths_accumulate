@@ -27,8 +27,9 @@ class UsersController < ApplicationController
 
   # may not be secure
   def redirect_non_users
-    if current_user == nil
-      redirect_to root_path, alert: "You do not have access to this user"
+    binding.pry
+    if !logged_in? && current_user.id != params["id"]
+      render :login
     end
   end
   
