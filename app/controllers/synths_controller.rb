@@ -1,6 +1,6 @@
 class SynthsController < ApplicationController
   
-  before_action :set_synth, :redirect_non_owners, only: [:show, :edit, :update, :destroy]
+  before_action :set_synth, :redirect_non_owners, only: [:edit, :update, :destroy]
   before_action :logged_in?, only: [:new]
 
   def new
@@ -25,6 +25,7 @@ class SynthsController < ApplicationController
 
   def show
     #before action set synth under private handles this now
+    @synth = Synth.find(params[:id])
   end
 
   def edit
@@ -55,7 +56,7 @@ class SynthsController < ApplicationController
 
   def redirect_non_owners
     if current_user != @synth.user
-      redirect_to user_path(current_user), alert: "Not editable by this user"
+      redirect_to synths_path, alert: "Not editable by this user"
     end
   end
 

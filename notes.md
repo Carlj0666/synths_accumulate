@@ -4,12 +4,14 @@ left off at (refactoring) 36:06 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feat
 BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 36:00
 
-* Log out doesn't work - application controller
-build form tag to send delete request
+* Need to remove price requirement from new tech
+* link to create new user on index page
+* logout button only appears when logged in
 
-* Delete Synth doesn't work - 
-build form tag to send delete request
-
+# Done
+* create, delete, update
+* log in/out as user
+* 
 
 *brand and price under new tech should be optional to add - Debating if tech should only be added with new synths?
 
