@@ -9,9 +9,9 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 * logout button only appears when logged in
 
 # Done
-* create, delete, update
+* create, delete, update only as logged in user/logged in oauth
 * log in/out as user
-* 
+* Not all errors displaying properly when trying to create synth with no input data
 
 *brand and price under new tech should be optional to add - Debating if tech should only be added with new synths?
 
