@@ -14,7 +14,7 @@ module ApplicationHelper
 
   def logged_and_current
     if logged_in?
-      "Logged in as: " + @current_user.username
+      "You are logged in, view your synths here " + @current_user.username + "."
     end
   end
 

@@ -11,8 +11,9 @@
   </head>
 
   <body>
-  
+  <% if logged_in? %>
     <%= link_to(logged_and_current, user_path(@current_user)) %>
+  <% end %>
   <hr>
     <% if flash[:message] %>
       <div class="field_with_errors"> <%=flash[:message]%></div>
