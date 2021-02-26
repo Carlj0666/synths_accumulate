@@ -4,8 +4,19 @@
 
 # TO DO
 * Check all the requirements, note which ones I'm not sure I've achieved
-* Refactor, remove logic from views
-* Study!!!
+* Refactor, remove logic from views!!
+* 
+* Study!!! Especially understand the use of the build method, Madeline keeps mentioning it!!
+Key Concepts:
+Request/response flow
+Authentication 
+Rails model validations 
+ActiveRecord Associations 
+Migrations and the Schema file 
+has_many through 
+Nested routes 
+Scope methods 
+
 
 
 # REMOVED FROM TECHES -form from line 17

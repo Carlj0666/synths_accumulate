@@ -11,9 +11,11 @@
   </head>
 
   <body>
+
   <% if logged_in? %>
     <%= link_to(logged_and_current, user_path(@current_user)) %>
   <% end %>
+
   <hr>
     <% if flash[:message] %>
       <div class="field_with_errors"> <%=flash[:message]%></div>
@@ -31,7 +33,6 @@
       <%= link_to('New Synth', new_synth_path) %><br>
       <%= link_to('New Tech', new_tech_path) %><br>
     <% end %>
-
 
     <%= form_tag logout_path(session.id), method: "delete" do %>
       <%= submit_tag "Logout"%>
