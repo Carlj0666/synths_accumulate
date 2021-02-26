@@ -12,23 +12,29 @@
 
   <body>
   
-  <%= logged_and_current %>
+    <%= logged_and_current %>
   <hr>
-  <% if flash[:message] %>
-    <div class="field_with_errors"> <%=flash[:message]%></div>
-  <% end %>
-    <%= yield %>
+    <% if flash[:message] %>
+      <div class="field_with_errors"> <%=flash[:message]%></div>
+    <% end %>
+
+  <%= yield %>
+
     <hr>
     <%= link_to("Home", root_path) %><br>
     <%= link_to("All Synths", synths_path) %><br>
     <%= link_to("All Tech", teches_path) %><br>
     <%= link_to("Prodigal Synth", prodigal_synth_path) %><br>
+    
+    <% if logged_in_with_access %>
     <%= link_to('New Synth', new_synth_path) %><br>
     <%= link_to('New Tech', new_tech_path) %><br>
-    
+    <% end %>
+
     <%= form_tag logout_path(session.id), method: "delete" do %>
       <%= submit_tag "Logout"%>
     <% end %>
 
   </body>
+
 </html>

@@ -3,10 +3,8 @@
 * Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
 
 # TO DO
-* Nest routes, tech displays only synths with the selected tech in teches/1 etc. When out of range, it shows the index. The nested route does not appear to display properly though
 
-
-* create method to check if logged i, use as before action in application helper since this should protect new, edit etc from non users
+* create method to check if logged in, use as before action in application helper since this should protect new, edit etc from non users
 * Check all the requirements, note which ones I'm not sure I've achieved and check with Madeline
 
 # REMOVED FROM TECHES -form from line 17

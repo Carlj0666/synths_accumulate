@@ -3,9 +3,9 @@ module SynthsHelper
 
   def display_synths_with_tech(tech)
     if tech
-      tag.h1("All synths with #{tech.name}")
+      tag.h3("All synths with #{tech.name} tech installed:")
     else 
-      "Synths Index"
+      tag.h3("Synths Index:")
     end
   end
 
