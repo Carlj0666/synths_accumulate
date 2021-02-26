@@ -18,12 +18,4 @@ module ApplicationHelper
     end
   end
 
-  def logged_in_with_access
-    if current_user != nil || logged_in? == true
-      true
-    else
-      false
-    end
-  end
-
 end
