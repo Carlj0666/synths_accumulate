@@ -21,7 +21,7 @@ class SynthsController < ApplicationController
   end
 
   def index
-    if params[:tech_id] && @tech = Tech.find_by(params[:tech_id])
+    if params[:tech_id] && @tech = Tech.find_by(id: params[:tech_id])
       @synths = @tech.synths
     else
       @synths = Synth.all

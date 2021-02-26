@@ -3,9 +3,9 @@
 * Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
 
 # Bugs
-* navigating to a non existant nested tech type route teches/99/synths shows Analog, all show analog?!
-* get error when trying to create a synth but not logged in should direct to create login
-* get error when trying to create new tech when not logged in should direct to create login
+* navigating to a non existant nested tech type route teches/99/synths shows Analog, all show analog
+
+Check action for login for new before action
 
 # REMOVED FROM TECHES -form from line 17
 *
