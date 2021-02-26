@@ -1,15 +1,9 @@
 
 <%= flash[:message] %>
 
-<% if @tech %>
-  <h1> All synths with <%= @tech.name %> </h1>
-  
-<% else %> 
-  <h1> Synths Index </h1>
-  <ul><% @synths.each do |synth| %>
-    <li> <%= link_to(synth.name_and_tech, synth_path(synth.id))%> </li>
-  <% end %></ul>
-<% end %>
+<%= display_synths_with_tech(@tech) %>
+
+<%= render partial: 'synth', collection: @synths %>
 
 
 

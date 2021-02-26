@@ -3,9 +3,9 @@
 * Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
 
 # TO DO
-* need to display synths on nested index page
+* Nest routes, tech displays only synths with the selected tech in teches/1 etc. When out of range, it shows the index. The nested route does not appear to display properly though
 
-* navigating to a non existant nested tech type route teches/99/synths shows Analog, all show analog
+
 * create method to check if logged i, use as before action in application helper since this should protect new, edit etc from non users
 * Check all the requirements, note which ones I'm not sure I've achieved and check with Madeline
 
