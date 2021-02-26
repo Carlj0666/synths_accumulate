@@ -6,10 +6,23 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 
 # Bugs
 * Not all errors displaying properly when trying to create synth with no input data
-* Need to remove price requirement from new tech
-* logout button only appears when logged in
-* Updating synth, and creating new synth does not assign the tech based on the drop down, only writing in.
 
+
+# REMOVED FROM TECHES -form from line 17
+*
+<%= f.fields_for :synths do |s| %><br>
+  <%= s.label :name %>
+  <%= s.text_field :name %><br>
+  <%= s.label :brand %>
+  <%= s.text_field :brand %><br> 
+  <%= s.label :hybrid %>
+  <%= s.check_box :hybrid %><br>
+  <%= s.label :price %>
+  <%= s.number_field :price %><br>
+  <%= s.label :description %>
+  <%= s.text_field :description %><br>
+<% end %>
+*
 
 ***NESTED ROUTES!!
 
