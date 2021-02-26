@@ -1,12 +1,18 @@
-# Test Notes Revised
-* Videos: refactoring https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
-* Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
+# Notes
 
 # TO DO
 * Check all the requirements, note which ones I'm not sure I've achieved
 * Refactor, remove logic from views!!
-* 
+
 * Study!!! Especially understand the use of the build method, Madeline keeps mentioning it!!
+Practice questions:
+https://docs.google.com/document/d/1lnaD7T1tp2jS_4TTL3uy_47P_GF6BSNQB3_Wvj1_xn0/edit 
+Example of a good readme: https://www.makeareadme.com/
+Examples of good technical blogs:
+https://stuart-hahn.github.io/writing_a_cli_gem_in_ruby
+https://medium.com/swlh/breaking-down-a-sinatra-application-18d158ab80ea
+https://dev.to/cristalcodes/creating-a-basic-sinatra-application
+
 Key Concepts:
 Request/response flow
 Authentication 
@@ -18,69 +24,13 @@ Nested routes
 Scope methods 
 
 
-
-# REMOVED FROM TECHES -form from line 17
-*
-<%= f.fields_for :synths do |s| %><br>
-  <%= s.label :name %>
-  <%= s.text_field :name %><br>
-  <%= s.label :brand %>
-  <%= s.text_field :brand %><br> 
-  <%= s.label :hybrid %>
-  <%= s.check_box :hybrid %><br>
-  <%= s.label :price %>
-  <%= s.number_field :price %><br>
-  <%= s.label :description %>
-  <%= s.text_field :description %><br>
-<% end %>
-*
-
-***NESTED ROUTES!!
-
-
-
-
-# Done
-* create, delete only as logged in user/logged in oauth
-* log in/out as user
-
-
-
-# Scope methods: https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be
-20:00
-
-# DONE
-
-
 # Learn plan
 1) Rails new
 2) Setup Tables/associations
 3) Follow week 6 videos to setup User Model
 4) Go back to 2nd video of week 1 
 5) Finish oauth setup here: https://www.youtube.com/watch?v=AoIqSQsijN0&feature=youtu.be from: 26:43
-6) Follow sequentially from there
 
-# Current
-
-CHECK - Create not working, no no synths saved? 
-CHECK = synths_attributes=(attributes) model for above
-NESTED ATTRIBES COULD FIX THIS
-Need to validate for email uniqueness, look into this. Video here includes discussion:
-https://www.youtube.com/watch?v=AoIqSQsijN0&feature=youtu.be
-
-
-# Associations Map
-# User
-has_many :synths
-has_many :tech, through: :synths
-
-# Synth
-belongs_to :user
-belongs_to :tech
-
-# Tech
-has_many :synths
-has_many :users, through: :synths
 
 # DB PURGE
 rake db:drop db:create db:migrate
