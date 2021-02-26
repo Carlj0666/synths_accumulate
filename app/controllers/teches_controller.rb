@@ -1,5 +1,6 @@
 class TechesController < ApplicationController
 
+
   def new
     @tech = Tech.new
     @tech.synths.build
