@@ -1,12 +1,11 @@
 # Test Notes Revised
-left off at (refactoring) 36:06 https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
-
-BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
-36:00
+* Videos: refactoring https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
+* Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
 
 # Bugs
-* Not all errors displaying properly when trying to create synth with no input data
-
+* navigating to a non existant nested tech type route teches/99/synths shows Analog, all show analog?!
+* get error when trying to create a synth but not logged in should direct to create login
+* get error when trying to create new tech when not logged in should direct to create login
 
 # REMOVED FROM TECHES -form from line 17
 *
@@ -26,24 +25,13 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 
 ***NESTED ROUTES!!
 
-* synths controller, create action, if not logged in, but try to create, error loads
-NoMethodError in SynthsController#create
-undefined method `synths' for nil:NilClass
-Extracted source (around line #17):          
-    #   render :new
-    # end
-    @synth = current_user.synths.build(synth_params)
-    if @synth.save
-      redirect_to synth_path(@synth)
-    else
+
 
 
 # Done
 * create, delete only as logged in user/logged in oauth
 * log in/out as user
 
-
-*brand and price under new tech should be optional to add - Debating if tech should only be added with new synths?
 
 
 # Scope methods: https://www.youtube.com/watch?v=7Il479ut4p4&feature=youtu.be

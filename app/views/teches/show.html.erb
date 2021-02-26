@@ -3,6 +3,5 @@
 <ul>
 <% @tech.synths.each do |synth| %>
   <li><%= link_to(synth.name, synth_path(synth.id)) %><br>
-  Hybrid? <%= synth.hybrid %></li>
 <% end %>
 </ul>
