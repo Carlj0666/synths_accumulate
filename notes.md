@@ -7,8 +7,8 @@ BELOW Accomplished WITH HELPERS VIA VIEW HELPERS? Research: https://www.youtube.
 # Bugs
 * Not all errors displaying properly when trying to create synth with no input data
 * Need to remove price requirement from new tech
-
 * logout button only appears when logged in
+* Updating synth, and creating new synth does not assign the tech based on the drop down, only writing in.
 
 
 ***NESTED ROUTES!!

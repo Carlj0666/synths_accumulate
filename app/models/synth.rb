@@ -8,8 +8,9 @@ class Synth < ApplicationRecord
   #allows several same brand but not with name as well
 
   def tech_attributes=(attributes)
-    # if !attributes[:name].blank?
+    if !attributes[:name].blank? #uncommented TESTING
     self.tech = Tech.find_or_create_by(name: attributes[:name])
+    end
   end
 
   def name_and_tech
