@@ -27,9 +27,11 @@
     <%= link_to("Prodigal Synth", prodigal_synth_path) %><br>
     
     <% if logged_in_with_access %>
-    <%= link_to('New Synth', new_synth_path) %><br>
-    <%= link_to('New Tech', new_tech_path) %><br>
+      <%= link_to('New Synth', new_synth_path) %><br>
+      <%= link_to('New Tech', new_tech_path) %><br>
+  
     <% end %>
+
 
     <%= form_tag logout_path(session.id), method: "delete" do %>
       <%= submit_tag "Logout"%>

@@ -2,7 +2,7 @@ class SynthsController < ApplicationController
   
   before_action :set_synth, :redirect_non_owners, only: [:edit, :update, :destroy]
   before_action :logged_in?, only: [:new]
-  before_action :logged_in_with_access, only: [:new]
+  before_action :logged_in_with_access, only: [:new, :edit, :destroy]
 
   def new
     @synth = Synth.new

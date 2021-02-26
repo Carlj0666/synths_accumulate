@@ -3,9 +3,14 @@
 * Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
 
 # TO DO
+* Refactor, remove logic from views
 
+Done?
 * create method to check if logged in, use as before action in application helper since this should protect new, edit etc from non users
+
 * Check all the requirements, note which ones I'm not sure I've achieved and check with Madeline
+
+* Study!!!
 
 # REMOVED FROM TECHES -form from line 17
 *
