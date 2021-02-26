@@ -2,10 +2,12 @@
 * Videos: refactoring https://www.youtube.com/watch?v=zqCQjUZ8kjE&feature=youtu.be
 * Videos: nested routes https://www.youtube.com/watch?v=FmWEfdCLLQM&feature=youtu.be
 
-# Bugs
-* navigating to a non existant nested tech type route teches/99/synths shows Analog, all show analog
+# TO DO
+* need to display synths on nested index page
 
-Check action for login for new before action
+* navigating to a non existant nested tech type route teches/99/synths shows Analog, all show analog
+* create method to check if logged i, use as before action in application helper since this should protect new, edit etc from non users
+* Check all the requirements, note which ones I'm not sure I've achieved and check with Madeline
 
 # REMOVED FROM TECHES -form from line 17
 *

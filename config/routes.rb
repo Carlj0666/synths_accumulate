@@ -20,6 +20,6 @@ Rails.application.routes.draw do
   resources :synths
   resources :teches, only: [:new, :create, :show, :index ] do
     resources :synths, only: [:index, :new, :create]
-
   end
+  
 end
