@@ -2,6 +2,6 @@
 
 <ul>
 <% @tech.synths.each do |synth| %>
-  <li><%= link_to(synth.name, synth_path(synth.id)) %><br>
+  <%= link_to(synth.name, synth_path(synth.id)) %><br>
 <% end %>
 </ul>

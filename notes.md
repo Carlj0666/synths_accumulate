@@ -6,8 +6,6 @@
 
 *Record Walkthrough for 5 min.
 
-* Write readme
-
 *Write Blog
 
 
