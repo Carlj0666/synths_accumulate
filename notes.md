@@ -4,8 +4,9 @@
 * Check all the requirements, note which ones I'm not sure I've achieved
 * Refactor, remove logic from views!!
 
-* Study!!! Especially understand the use of the build method, Madeline keeps mentioning it!!
-Practice questions:
+*Record Walkthrough for 5 min.
+*Sample questions revised by Madeline: https://docs.google.com/document/d/1X2ksfUCOZcE0cNZg7xYGNOJCEkRUMMiD-YD5kvDR6XI/edit
+*Practice questions:
 https://docs.google.com/document/d/1lnaD7T1tp2jS_4TTL3uy_47P_GF6BSNQB3_Wvj1_xn0/edit 
 Example of a good readme: https://www.makeareadme.com/
 Examples of good technical blogs:
@@ -13,7 +14,12 @@ https://stuart-hahn.github.io/writing_a_cli_gem_in_ruby
 https://medium.com/swlh/breaking-down-a-sinatra-application-18d158ab80ea
 https://dev.to/cristalcodes/creating-a-basic-sinatra-application
 
-Key Concepts:
+
+* Study!!! Especially understand the use of the build method, Madeline keeps mentioning it!!
+
+https://apidock.com/rails/ActiveRecord/Associations/CollectionProxy/build
+
+*Key Concepts:
 Request/response flow
 Authentication 
 Rails model validations 
