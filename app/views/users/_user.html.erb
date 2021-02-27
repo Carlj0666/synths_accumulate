@@ -1,0 +1,4 @@
+<br>
+<% @user.synths.each do |synth| %>
+  <%= link_to(synth.name, synth_path(synth.id)) %><br>
+<% end %>

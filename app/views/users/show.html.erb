@@ -1,8 +1,5 @@
 <h1>Welcome <%= @user.username %></h1>
 
 Your Synths:
-<br>
-<% @user.synths.each do |synth| %>
-  <%= link_to(synth.name, synth_path(synth.id)) %><br>
-<% end %>
 
+<%= render "user" %>
