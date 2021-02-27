@@ -1,24 +1,16 @@
-# README
+# Synths Accumulate App
+The Synths Accumulate app is a Ruby on Rails based web application which was created to allow users to create an account so they may login securely, create and edit synthesizers and their associated technologies. Each synth has an associated name, brand, price, tech and description which are added by the user though a form. Users can view the synths and their details, but can only make changes to and delete the synths they have added to the database. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Installation
+1) Fork and clone the project files found here: https://github.com/Carlj0666/synths_accumulate
+2) Run the app in your favorite local developer environment
+3) Run bundle install
+4) Start the server by typing rails s in your terminal
+5) CMD click http://127.0.0.1:3000 in your terminal to navigate to thee welcome page.
 
-Things you may want to cover:
+#### Contributions:
+Additional methods to filter views based on various attributes would make a nice edition, as well as links to manufacturers websites. Artwork and styling (CSS) would be welcome.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### License
+Creative Commons License
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
