@@ -3,10 +3,12 @@ The Synths Accumulate app is a Ruby on Rails based web application which was cre
 
 #### Installation
 1) Fork and clone the project files found here: https://github.com/Carlj0666/synths_accumulate
-2) Run the app in your favorite local developer environment
+2) CD into the root project file and type: code .
 3) Run bundle install
 4) Start the server by typing rails s in your terminal
 5) CMD click http://127.0.0.1:3000 in your terminal to navigate to thee welcome page.
+6) Create an account or login with Google
+7) Make some synths!
 
 #### Contributions:
 Additional methods to filter views based on various attributes would make a nice edition, as well as links to manufacturers websites. Artwork and styling (CSS) would be welcome.
