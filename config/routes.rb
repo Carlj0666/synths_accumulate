@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   # get '/synths', to: 'synths#index', as: 'synths'
   # get '/synths/:id', to: 'synths#show', as: 'synth'
   resources :synths
-  resources :teches, only: [:new, :create, :show, :index ] do
+  resources :teches, only: [:new, :create, :show, :index] do
     resources :synths, only: [:index, :new, :create]
   end
   
