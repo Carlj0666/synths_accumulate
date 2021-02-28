@@ -3,7 +3,7 @@
 # TO DO
 
 * Refactor, remove logic from views!! Use partials and helpers, dry up the code
-* Only show and application helper have logic for views
+ - Only show and application helper have logic in their views, need to figure out how to display links in helpers.
 
 *Record Walkthrough for 5 min.
 
