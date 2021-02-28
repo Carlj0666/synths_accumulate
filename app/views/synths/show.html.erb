@@ -12,7 +12,7 @@ Description: <%= @synth.description %><br>
   <%= form_tag synth_path(@synth.id), method: "delete" do %>
     <%= submit_tag "Delete #{@synth.name}" %>
   <% end %>
+
 <% end %>
 
-# <%= if_logged_link_edit_delete(@synth) %>
 
