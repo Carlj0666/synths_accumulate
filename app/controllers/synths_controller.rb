@@ -9,8 +9,7 @@ class SynthsController < ApplicationController
   end
 
   def create 
-    #@synth = Synth.new(synth_params)
-    
+
     @synth = current_user.synths.build(synth_params)
     if @synth.save
       redirect_to synth_path(@synth)
@@ -29,22 +28,18 @@ class SynthsController < ApplicationController
   end
 
   def show
-    #before action set synth under private handles this now
     @synth = Synth.find(params[:id])
   end
 
   def edit
-      #before action set synth under private handles this now
   end
 
   def update
-      #before action set synth under private handles this now
     @synth.update(synth_params)
     redirect_to synth_path(@synth)
   end
 
   def destroy
-      #before action set synth under private handles this now
     @synth.destroy
     redirect_to synths_path
   end

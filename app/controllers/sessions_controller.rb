@@ -4,9 +4,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by_email(params[:email])
-    if @user && @user.authenticate(params[:password])
-      session[:user_id] = @user.id
+    @user = User.find_by_email(params[:email]) #find by email given
+    if @user && @user.authenticate(params[:password]) #if user is found and authed(authenicate comes form has_secure_password)
+      session[:user_id] = @user.id #actual login, the session user id is the same as the user id
       redirect_to user_path(@user)
     else
       flash[:message] = "Please Try Again"
@@ -15,6 +15,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    # user = Synth.find(params[:id])
     session.delete(:user_id)
     redirect_to '/login'
   end
@@ -24,9 +25,8 @@ class SessionsController < ApplicationController
 
     if user.valid?
       session[:user_id] = user.id
-      binding.pry
-      redirect_to user_path(new_synth_path) 
-      #The above works but (session[:user_id]) 
+      redirect_to new_synth_path
+      #The above works but user_path(session[:user_id]) 
       #goes to the users show page, is it ok to use the user path and access the session id here? 
     else
       flash[:message] = user.errors.full_messages.join("")
