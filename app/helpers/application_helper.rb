@@ -1,5 +1,7 @@
 module ApplicationHelper
 
+  # helper_method :display_link_to_current_user
+
   def current_user
     if @current_user #this ensures we don't check the db uneccisarily 
       @current_user
@@ -18,4 +20,12 @@ module ApplicationHelper
     end
   end
 
+  # def display_link_to_current_user(current_user)
+  #   if logged_in?
+  #     link_to(logged_and_current, user_path(current_user))
+  #   end
+  # end
+  
 end
+
+

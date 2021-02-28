@@ -16,6 +16,9 @@
     <%= link_to(logged_and_current, user_path(@current_user)) %>
   <% end %>
 
+  <! Commented out >
+  <! display_link_to_current_user(@current_user) >
+
   <hr>
     <% if flash[:message] %>
       <div class="field_with_errors"> <%=flash[:message]%></div>

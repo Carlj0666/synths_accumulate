@@ -3,13 +3,14 @@
 # TO DO
 
 * Refactor, remove logic from views!! Use partials and helpers, dry up the code
+* Only show and application helper have logic for views
 
 *Record Walkthrough for 5 min.
 
 *Write Blog
 
-
 *Sample questions revised by Madeline: https://docs.google.com/document/d/1X2ksfUCOZcE0cNZg7xYGNOJCEkRUMMiD-YD5kvDR6XI/edit
+
 *Practice questions:
 https://docs.google.com/document/d/1lnaD7T1tp2jS_4TTL3uy_47P_GF6BSNQB3_Wvj1_xn0/edit 
 
