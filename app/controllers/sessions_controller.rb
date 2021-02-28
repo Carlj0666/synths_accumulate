@@ -26,7 +26,9 @@ class SessionsController < ApplicationController
     if user.valid?
       session[:user_id] = user.id
       binding.pry
-      redirect_to user_path(session[:user_id]) #old code (new_synth_path), is it ok to use the user path here? 
+      redirect_to user_path(new_synth_path) 
+      #The above works but (session[:user_id]) 
+      #goes to the users show page, is it ok to use the user path and access the session id here? 
     else
       flash[:message] = user.errors.full_messages.join("")
       redirect_to synths_path
