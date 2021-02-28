@@ -7,8 +7,9 @@ The Synths Accumulate app is a Ruby on Rails based web application which was cre
 3) Run bundle install
 4) Start the server by typing rails s in your terminal
 5) CMD click http://127.0.0.1:3000 in your terminal to navigate to thee welcome page.
-6) Create an account or login with Google
-7) Make some synths!
+6) In the browser bar, type in http://localhost:3000 otherwise oauth will return an error.
+7) Create an account or login with Google
+8) Make some synths!
 
 #### Contributions:
 Additional methods to filter views based on various attributes would make a nice edition, as well as links to manufacturers websites. Artwork and styling (CSS) would be welcome.
