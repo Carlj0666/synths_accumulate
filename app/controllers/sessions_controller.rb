@@ -4,9 +4,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by_email(params[:email]) #find by email given
-    if @user && @user.authenticate(params[:password]) #if user is found and authed(authenicate comes form has_secure_password)
-      session[:user_id] = @user.id #actual login, the session user id is the same as the user id
+    @user = User.find_by_email(params[:email])
+    if @user && @user.authenticate(params[:password])
+      session[:user_id] = @user.id
       redirect_to user_path(@user)
     else
       flash[:message] = "Please Try Again"
@@ -15,7 +15,6 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    # user = Synth.find(params[:id])
     session.delete(:user_id)
     redirect_to '/login'
   end

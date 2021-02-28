@@ -1,11 +1,9 @@
 class Synth < ApplicationRecord
   belongs_to :user
   belongs_to :tech
-  # accepts_nested_attributes_for :tech #Nested attribs on line 19 of synths new view
   validates :name, :brand, :price, :description, :tech, presence: true
   validates :price, numericality: { greater_than: 0 }
   validates :brand, uniqueness: { scope: [:tech, :price, :name], message: "Tech, Price and Name for this Synth was already created"}
-  #allows several same brand but not with name as well
 
   def tech_attributes=(attributes)
     if !attributes[:name].blank? #uncommented TESTING
@@ -28,6 +26,5 @@ class Synth < ApplicationRecord
   def self.order_by_price
     self.order(price: :desc)
   end
-
 
 end

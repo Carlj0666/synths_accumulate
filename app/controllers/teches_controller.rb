@@ -29,7 +29,6 @@ class TechesController < ApplicationController
 
   def tech_params
     params.require(:tech).permit(:name, synths_attributes: [:name, :brand, :hybrid, :price, :description])
-    #synths_attributes comes from the accepts_nested_attributes_for :synths method
   end
 
 end

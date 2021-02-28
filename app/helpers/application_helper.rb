@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def logged_in?
-    !!current_user #could use session[:user_id] method from above here too
+    !!current_user
   end
 
   def logged_and_current
@@ -19,12 +19,6 @@ module ApplicationHelper
       "You are logged in, view your synths here " + @current_user.username + "."
     end
   end
-
-  # def display_link_to_current_user(current_user)
-  #   if logged_in?
-  #     link_to(logged_and_current, user_path(current_user))
-  #   end
-  # end
   
 end
 

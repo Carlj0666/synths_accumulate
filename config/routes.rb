@@ -14,9 +14,7 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show', as: 'user'
 
   get '/synths/prodigal', to: 'synths#prodigal', as: 'prodigal_synth'
-  #remember that the order of routes matter here, put custom routes at the top
-  # get '/synths', to: 'synths#index', as: 'synths'
-  # get '/synths/:id', to: 'synths#show', as: 'synth'
+
   resources :synths
   resources :teches, only: [:new, :create, :show, :index] do
     resources :synths, only: [:index, :new, :create]
