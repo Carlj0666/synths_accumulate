@@ -9,6 +9,8 @@
 
 *Write Blog
 
+# remove comments from code!!
+
 *Sample questions revised by Madeline: https://docs.google.com/document/d/1X2ksfUCOZcE0cNZg7xYGNOJCEkRUMMiD-YD5kvDR6XI/edit
 
 *Practice questions:
