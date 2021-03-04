@@ -4,8 +4,13 @@ class SynthsController < ApplicationController
   before_action :logged_in?, only: [:new, :edit, :destroy]
 
   def new
-    @synth = Synth.new
-    @synth.build_tech 
+    if params[:tech_id] && @tech = Tech.find_by(id: params[:tech_id]) 
+      @synth = @tech.synths.build
+    else
+      @synth = Synth.new
+      @synth.build_tech
+    end
+
   end
 
   def create 
@@ -46,6 +51,11 @@ class SynthsController < ApplicationController
 
   def prodigal
     @synth = Synth.order_by_price.first
+  end
+
+  def ordered_alphabetically
+    @synths = Synth.ordered_alphabetically
+     synths_ordered_alphabetically_path
   end
 
   private

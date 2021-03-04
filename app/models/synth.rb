@@ -26,5 +26,9 @@ class Synth < ApplicationRecord
   def self.order_by_price
     self.order(price: :desc)
   end
+  
+  def self.ordered_alphabetically
+    self.order(:name)
+  end
 
 end

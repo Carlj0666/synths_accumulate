@@ -13,7 +13,7 @@
 </div>
 <% end %>
 
-<%= form_for(@synth) do |f| %>
+<%= form_for([@tech, @synth]) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %><br>
   <%= f.label :tech %>
@@ -21,7 +21,7 @@
     New<%= f.fields_for :tech do |t| %>
     <%= t.label :tech %>
     <%= t.text_field :name %><br>
-  <% end %>
+  <% end %> 
   <%= f.label :brand %>
   <%= f.text_field :brand %><br>
   <%= f.label :hybrid %>

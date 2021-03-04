@@ -5,3 +5,5 @@
   <%= link_to(synth.name, synth_path(synth.id)) %><br>
 <% end %>
 </ul>
+
+<%= link_to("Make a new #{@tech.name} synth", new_tech_synth_path(@tech.id)) %>

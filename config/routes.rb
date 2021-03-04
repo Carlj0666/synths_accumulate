@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get '/synths/prodigal', to: 'synths#prodigal', as: 'prodigal_synth'
 
+  get '/synths/ordered_alphabetically', to: 'synths#ordered_alphabetically' 
+
   resources :synths
   resources :teches, only: [:new, :create, :show, :index] do
     resources :synths, only: [:index, :new, :create]
