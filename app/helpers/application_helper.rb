@@ -3,7 +3,7 @@ module ApplicationHelper
   # helper_method :display_link_to_current_user
 
   def current_user
-    if @current_user #this ensures we don't check the db uneccisarily 
+    if @current_user
       @current_user
     else
       @current_user = User.find_by(id: session[:user_id])
