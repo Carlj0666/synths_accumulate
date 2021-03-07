@@ -20,7 +20,7 @@ class TechesController < ApplicationController
     @tech = Tech.find(params[:id])
   end
 
-  def index  
+  def index
     @teches = Tech.all 
   end
 

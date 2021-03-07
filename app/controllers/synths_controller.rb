@@ -16,6 +16,7 @@ class SynthsController < ApplicationController
   def create 
 
     @synth = current_user.synths.build(synth_params)
+    binding.pry
     if @synth.save
       redirect_to synth_path(@synth)
     else

@@ -6,7 +6,7 @@ class Synth < ApplicationRecord
   validates :brand, uniqueness: { scope: [:tech, :price, :name], message: "Tech, Price and Name for this Synth was already created"}
 
   def tech_attributes=(attributes)
-    if !attributes[:name].blank? #uncommented TESTING
+    if !attributes[:name].blank?
     self.tech = Tech.find_or_create_by(name: attributes[:name])
     end
   end
