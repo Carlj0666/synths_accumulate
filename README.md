@@ -15,5 +15,5 @@ The Synths Accumulate app is a Ruby on Rails based web application which was cre
 Additional methods to filter views based on various attributes would make a nice edition, as well as links to manufacturers websites. Artwork and styling (CSS) would be welcome.
 
 #### License
-Creative Commons License
-This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.
